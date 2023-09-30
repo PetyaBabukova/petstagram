@@ -1,0 +1,41 @@
+                <div class="card">
+
+                    <!-- Start User Details and Image Location -->
+                    <div class="top">
+                        <div class="userDetails">
+                            <!-- Link to User Profile Page -->
+                            <a href="#" action="#" method="#">
+                                <div class="profilepic">
+                                    <div class="profile_img">
+                                        <div class="image">
+                                            <img src="/images/person.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <h3>
+                                <!-- Link to User Profile Page -->
+                                <p>
+                                    <!-- show user username -->
+                                    {{owner.username}}
+                                </p>    
+                                <!-- photo's location -->
+                                <span>{{location}}</span>
+                            </h3>
+                        </div>
+                    </div>
+
+                    
+                    <div class="imgBx">
+                        <img src="{{image}}" alt="post" class="cover">
+                    </div>
+                    
+                    
+                    <h5 class="petName">Name: {{name}}</h5>
+
+                    <h5 class="petAge">Age: {{age}}</h5>
+
+                    <a href="/photos/{{_id}}/details" id="see-details">
+                        <h4 class="details">See details</h4>
+                    </a>
+                </div>
